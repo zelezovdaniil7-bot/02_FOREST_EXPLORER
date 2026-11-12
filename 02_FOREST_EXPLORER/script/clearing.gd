@@ -1,0 +1,23 @@
+extends Node2D
+func _ready() -> void:
+    var bg := ColorRect.new()
+    bg.color = Color("#263e37")
+    bg.position = Vector2(-500,-500)
+    bg.size = Vector2(1000,1000)
+    add_child(bg)
+    var player := preload("res://scenes/Player.tscn").instantiate()
+    player.position = Vector2(100,65)
+    add_child(player)
+    var camp := preload("res://scenes/Camp.tscn").instantiate()
+    camp.position = Vector2(140,65)
+    add_child(camp)
+    var text := Label.new()
+    text.text = "НОВАЯ СЦЕНА — ПОЛЯНА"
+    text.position = Vector2(40,15)
+    text.add_theme_font_size_override("font_size",10)
+    add_child(text)
+    var ui := preload("res://scenes/UiForest.tscn").instantiate()
+    add_child(ui)
+    var overlay := CanvasModulate.new()
+    overlay.color = Color("#66718c")
+    add_child(overlay)

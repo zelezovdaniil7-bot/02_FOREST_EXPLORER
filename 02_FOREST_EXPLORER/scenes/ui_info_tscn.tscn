@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bswl0s28slum0"]
+
+[ext_resource type="Script" uid="uid://mmirfjhr535q" path="res://script/ui_info.gd" id="1_w6kn0"]
+
+[node name="UiInfo_tscn" type="Node2D" unique_id=514098247]
+
+[node name="UiInfo" type="Control" parent="." unique_id=1754676218]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 226.0
+offset_bottom = 132.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w6kn0")
+metadata/_edit_use_anchors_ = true
